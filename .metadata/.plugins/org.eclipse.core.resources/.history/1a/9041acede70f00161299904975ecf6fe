@@ -1,0 +1,9 @@
+
+public class Main {
+	public static void main(String[] args) {
+		String s = "baclo";
+		String t = "a" + "llo" + new String("");
+		System.out.println(s.compareTo(t));
+		System.out.println(s==t);
+	}
+}

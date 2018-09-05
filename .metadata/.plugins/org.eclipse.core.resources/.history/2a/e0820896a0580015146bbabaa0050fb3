@@ -1,0 +1,46 @@
+// Java0530.java
+// This program places a single bug at row-8, col-1.
+
+
+import info.gridworld.actor.ActorWorld;
+import info.gridworld.actor.Bug;
+import info.gridworld.grid.BoundedGrid;
+import info.gridworld.grid.Grid;
+import info.gridworld.grid.Location;
+
+
+public class Java0530
+{
+    public static void main(String[] args)
+    {
+        ActorWorld world = new ActorWorld();
+        Bug barry = new Bug();
+        world.add(new Location(8, 1), barry);
+        world.show();
+        for(int x = 0; x<7; x++) barry.move();
+        for(int x = 0; x<4; x++) barry.turn();
+        for(int x = 0; x<4; x++) barry.move();
+        for(int x = 0; x<6; x++) barry.turn();
+        for(int x = 0; x<5; x++) barry.move();
+        for(int x = 0; x<2; x++) barry.turn();
+        for(int x = 0; x<4; x++) barry.move();
+        for(int x = 0; x<4; x++) barry.turn();
+        for(int x = 0; x<7; x++) barry.move();
+        /*for(int x = 0; x<7; x++) barry.move();
+        for(int x = 0; x<3; x++) barry.turn();
+        for(int x = 0; x<7; x++) barry.move();
+        for(int x = 0; x<3; x++) barry.turn();
+        for(int x = 0; x<7; x++) barry.move();
+        for(int x = 0; x<5; x++) barry.turn();
+        for(int x = 0; x<7; x++) barry.move();*/
+    }
+}
+
+
+
+
+
+
+
+
+

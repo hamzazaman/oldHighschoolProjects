@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+public class Cards {
+	private String game;
+	private int numDecks;
+	private int numPlayers;
+	private int cardsLeft;
+	
+	Cards(){
+		game = "Boring";
+		numDecks = 2;
+		numPlayers = 4;
+		cardsLeft = 6;
+	}
+	
+	public void print(){
+		System.out.println(getGame());
+		System.out.println(getNumDecks());
+		System.out.println(getNumPlayers());
+		System.out.println(getCardsLeft()());
+	}
+	
+	public void setValues(){
+		Scanner s = new Scanner(System.in);
+		System.out.println("Game:");
+		setGame(s.nextLine());
+		System.out.println("NumDecks:");
+		setNumDecks(s.nextInt());
+		System.out.println("NumPlayers");
+		setNumPlayers(s.nextInt());
+		System.out.println("CardsLeft:");
+		setCardsLeft(s.nextInt());
+		s.close();
+	}
+	
+	public String getGame() {
+		return game;
+	}
+	public void setGame(String game) {
+		this.game = game;
+	}
+	public int getNumDecks() {
+		return numDecks;
+	}
+	public void setNumDecks(int numDecks) {
+		this.numDecks = numDecks;
+	}
+	public int getNumPlayers() {
+		return numPlayers;
+	}
+	public void setNumPlayers(int numPlayers) {
+		this.numPlayers = numPlayers;
+	}
+	public int getCardsLeft() {
+		return cardsLeft;
+	}
+	public void setCardsLeft(int cardsLeft) {
+		this.cardsLeft = cardsLeft;
+	}
+	
+}

@@ -1,0 +1,12 @@
+
+public class Main {
+	public static void main(String[] args) {
+		String s = "aclo";
+		String t = "z" + "llo" + new String("");
+		System.out.println(s.compareTo(t));
+		System.out.println(s==t);
+		Object o = new Object();
+		System.out.println(o.hashCode());
+		
+	}
+}
